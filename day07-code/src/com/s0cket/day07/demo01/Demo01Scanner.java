@@ -1,2 +1,38 @@
-package com.s0cket.day07.demo01;public class Demo01Scanner {
+package com.s0cket.day07.demo01;
+
+import java.util.Scanner;
+
+/*
+Scanner类的功能：可以实现键盘输入数据，到程序当中。
+引用类型的一般步骤：
+
+1、导包
+import 包路径.类名称;
+如果需要使用的目标类，和当前类处于同一个包下，则可以省略导包语句不写。
+只有java.lang报下的内容不需要导包，其他的包都需要import语句。
+
+2、创建
+类名称 对象名 = new 类名称();
+
+3、对象名.成员方法名()
+
+获取键盘输入的一个int数字：int num = sc.nextInt();
+获取键盘输入的一个字符串：String str = sc.next();
+ */
+public class Demo01Scanner {
+    public static void main(String[] args) {
+        //2、创建
+        //备注：System.in表示从键盘进行输入
+        Scanner sc = new Scanner(System.in);
+
+        //3、获取键盘输入的int数字
+        int num = sc.nextInt();
+        System.out.println("键盘输入的数字是：" + num);
+
+        System.out.println("===================");
+        //4、获取键盘输入的字符串
+        String str = sc.next();
+        System.out.println("键盘输入的字符串是：" + str);
+
+    }
 }
