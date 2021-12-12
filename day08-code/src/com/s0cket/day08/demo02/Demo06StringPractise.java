@@ -5,4 +5,21 @@ package com.s0cket.day08.demo02;
 
  */
 public class Demo06StringPractise {
+    public static void main(String[] args) {
+        int[] array = { 1, 2, 3};
+        String str = getStr(array);
+        System.out.println(str);
+    }
+
+    public static String getStr(int[] array) {
+        String str = new String("[");
+        for (int i = 0; i < array.length; i++) {
+           if( i!= array.length-1) {
+               str = str.concat(array[i] + "#");
+           } else {
+               str = str.concat(array[i] + "]");
+           }
+        }
+        return str;
+    }
 }
