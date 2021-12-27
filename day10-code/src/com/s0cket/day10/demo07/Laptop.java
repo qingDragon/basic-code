@@ -10,15 +10,16 @@ public class Laptop {
     public void shutdown() {
         System.out.println("笔记本关机");
     }
-
+    // 使用USB设备的方法，使用接口作为方法的参数。
     public void useUSB(USB usb) {
-        if ( usb instanceof Mouse) {
-            Mouse mouse = (Mouse) usb;
+        usb.open();
+        if ( usb instanceof Mouse) { // 一定要先判断
+            Mouse mouse = (Mouse) usb; // 向下转型
             mouse.click();
-        }
-        if ( usb instanceof Keyboard) {
+        } else if ( usb instanceof Keyboard) {
             Keyboard keyboard = (Keyboard) usb;
             keyboard.tap();
         }
+        usb.close();
     }
 }

@@ -1,0 +1,26 @@
+package com.s0cket.day11.demo04;
+/*
+如果一个类是定义在一个方法内部的，那么这个类就是个局部内部类。
+"局部"：只有当前方法内部才能使用，出了这个方法就无法访问了。
+
+定义格式：
+修饰符 class 外部类名称{
+    修饰符 返回值类型 方法名称(参数列表) {
+        class 局部内部类名称{
+            // ...
+        }
+    }
+}
+ */
+public class Outer {
+    public void methodOuter() {
+        class Inner { // 局部内部类
+            int num = 10;
+            public void methodInner() {
+                System.out.println(num);// 10
+            }
+        }
+        Inner inner = new Inner();
+        inner.methodInner();
+    }
+}

@@ -11,7 +11,7 @@ public class Mouse implements USB {
     public void close() {
         System.out.println("鼠标关闭USB");
     }
-
+    // 鼠标独有的方法
     public void click() {
         System.out.println("鼠标点击");
     }

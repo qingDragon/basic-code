@@ -11,6 +11,7 @@ public class Keyboard implements USB {
         System.out.println("关闭键盘USB");
     }
 
+    // 键盘独有的方法
     public void tap() {
         System.out.println("键盘敲击");
     }
