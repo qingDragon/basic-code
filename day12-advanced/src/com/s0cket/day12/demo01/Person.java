@@ -1,5 +1,7 @@
 package com.s0cket.day12.demo01;
 
+import java.util.Objects;
+
 public class Person {
     private String name;
     private int age;
@@ -23,6 +25,31 @@ public class Person {
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    /*
+        Object类的equals方法比较是两个对象的地址值，没有意义
+        需要重写该方法，来比较对象的属性值。
+
+        问题：隐含多态
+        Object obj = new Person("古力娜扎", 18);
+        多态弊端：无法使用子类特有的属性、方法
+        解决：向下转型（强转）
+     */
+
+    @Override
+    public boolean equals(Object o) {
+        // 如果传入的对象是调用方法的对象自己，直接返回，提高效率
+        if (this == o) return true;
+        //                判断o的类型与调用方法的对象类型不一致
+        if (o == null || getClass() != o.getClass()) return false;// 反射，后面学
+        Person person = (Person) o;
+        return age == person.age && Objects.equals(name, person.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age);
     }
 
     public String getName() {
