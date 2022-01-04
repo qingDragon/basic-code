@@ -1,4 +1,4 @@
-package com.s0cket.day12.demo01;
+package com.s0cket.day12.demo01.Object;
 
 /*
 Person 继承了Object类，所有可以使用Object类的equals方法

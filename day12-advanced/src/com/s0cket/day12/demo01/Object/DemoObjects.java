@@ -1,4 +1,4 @@
-package com.s0cket.day12.demo01;
+package com.s0cket.day12.demo01.Object;
 
 import java.util.Objects;
 
@@ -20,7 +20,7 @@ public class DemoObjects {
                 return (a == b) || (a != null && a.equals(b));
             }
          */
-        
+
         Boolean b2 = Objects.equals(s1, s2);
         System.out.println(b2); // false
     }

@@ -1,4 +1,4 @@
-package com.s0cket.day12.demo01;
+package com.s0cket.day12.demo01.Object;
 
 import java.util.Objects;
 
