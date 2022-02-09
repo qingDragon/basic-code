@@ -1,6 +1,6 @@
 package com.s0cket.day10.demo01;
 /*
-在任何版本的Java中，接口都能定义抽相关方法。
+在任何版本的Java中，接口都能定义抽象方法。
 格式：
 public abstract 返回值类型 方法名称();
 

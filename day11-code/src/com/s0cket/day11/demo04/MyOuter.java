@@ -8,7 +8,7 @@ package com.s0cket.day11.demo04;
 1、new出来的对象在堆内存中
 2、局部变量是跟着方法走的，存在栈内存中。
 3、方法运行结束后，立即出栈，局部变量就会立刻消失。
-4、但是new出来的额对象会在堆中持续存在，直到垃圾回收才会消失。
+4、但是new出来的对象会在堆中持续存在，直到垃圾回收才会消失。
  */
 public class MyOuter {
     public void methodOuter() {
