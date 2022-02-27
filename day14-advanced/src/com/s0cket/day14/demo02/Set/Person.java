@@ -1,7 +1,6 @@
 package com.s0cket.day14.demo02.Set;
 
 import java.util.Objects;
-
 public class Person {
     private String name;
     private int age;

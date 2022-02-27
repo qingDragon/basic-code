@@ -21,5 +21,4 @@ public class Demo01JDK9 {
         System.out.println(list);
         list.add("e");// java.lang.UnsupportedOperationException
     }
-
 }

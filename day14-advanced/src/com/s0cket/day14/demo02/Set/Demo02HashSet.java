@@ -7,7 +7,7 @@ import java.util.Set;
 /*
     java.util.HashSet 实现了Set接口，由哈希表支持（实际上是HashMap的实例）
         除了包含Set接口的特点：
-        1、元素是无序的。（存集合所说的序，是指元素存入集合的顺序，当元素存储顺序和取出顺序一致时就是有序，否则就是无序。）
+        1、元素是无序的。，
         2、底层是哈希表结构，特点是查询的速度特别快
      此实现也不是同步的，使用了多线程。
 
@@ -27,7 +27,6 @@ public class Demo02HashSet {
         hashSet.add("adfasd");
         hashSet.add("c");
 
-
         System.out.println(hashSet);
 
         // 使用迭代器遍历
@@ -37,7 +36,6 @@ public class Demo02HashSet {
             System.out.println(next);
         }
 
-        System.out.println("============");
         // 使用增强for遍历
         for(String str : hashSet) {
             System.out.println(str);

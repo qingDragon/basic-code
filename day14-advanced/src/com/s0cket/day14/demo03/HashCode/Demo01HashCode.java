@@ -43,8 +43,6 @@ public class Demo01HashCode {
         // 哈希冲突：不同的内容hashCode相同
         System.out.println("重地".hashCode());// 1179395
         System.out.println("通话".hashCode());// 1179395
-
-
     }
 }
 

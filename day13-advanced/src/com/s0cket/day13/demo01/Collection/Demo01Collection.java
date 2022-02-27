@@ -6,7 +6,7 @@ package com.s0cket.day13.demo01.Collection;
 2、数组中存储的是统一类型的元素，可以存储基本数据类型值。集合存储的都是对象，而且对象的类型可以不一致。
 开发中当对象比较多的时候，使用集合进行存储。
 
-集合按照存储结构分为两大类：
+集合按照存储结构分为两大类：xxc
 单列集合：java.util.Collection
 双列集合：java.util.Map
 
