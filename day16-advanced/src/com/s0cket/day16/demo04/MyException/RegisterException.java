@@ -20,11 +20,9 @@ public class RegisterException extends Exception{
     public RegisterException(){
         super();
     }
-
     /*
         添加一个带异常信息的构造方法，查看源码发现，所有的异常类都会有一个异常信息的构造方法，方法内部会调用父类待异常信息的构造方法，让父类来处理这个异常
      */
-
     public RegisterException(String message) {
         super(message);
     }

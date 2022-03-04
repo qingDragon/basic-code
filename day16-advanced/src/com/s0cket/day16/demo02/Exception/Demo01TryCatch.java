@@ -39,12 +39,8 @@ public class Demo01TryCatch {
                    public void printStackTrace() Prints this throwable and its backtrace to the standard error stream.
                         - JVM打印异常对象，默认使用此方法，打印的异常信息是最全面的
              */
-
             // System.out.println(e.getMessage());// 方法的后缀名不对！
             // System.out.println(e.toString());// java.io.IOException: 方法的后缀名不对！
-
-
-
             /*
             java.io.IOException: 方法的后缀名不对！
 	            at com.s0cket.day16.demo02.Exception.Demo01TryCatch.readFile(Demo01TryCatch.java:58)
@@ -56,8 +52,6 @@ public class Demo01TryCatch {
         }
         System.out.println("后续代码");
     }
-
-
     private static void readFile(String filename) throws IOException {
         /*
             如果传递的后缀名不对，抛出IO异常，告诉方法的调用者

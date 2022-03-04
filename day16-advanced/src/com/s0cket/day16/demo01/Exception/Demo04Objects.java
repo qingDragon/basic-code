@@ -14,7 +14,7 @@ import java.util.Objects;
  */
 public class Demo04Objects {
     public static void main(String[] args) {
-        method("null");
+        method(null);
     }
 
     private static void method(Object o) {

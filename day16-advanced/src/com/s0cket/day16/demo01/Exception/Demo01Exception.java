@@ -23,15 +23,15 @@ public class Demo01Exception {
 //        System.out.println(date);
 
         // 第二种处理方式：try catch
-//        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-//        Date date = null;
-//        try {
-//            date = sdf.parse("1999-09");
-//        } catch (ParseException e) {
-//            e.printStackTrace();
-//        }
-//        System.out.println(date);
-//        System.out.println("后续代码");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = null;
+        try {
+            date = sdf.parse("1999-09");
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        System.out.println(date);
+        System.out.println("后续代码");
 
 
     }
