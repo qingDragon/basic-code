@@ -5,7 +5,6 @@ package com.s0cket.day17.demo11.WaitAndNotify;
     创建包子对象
     创建包子铺线程，开启，生产包子
     创建吃货线程，开启，吃包子
-
  */
 public class Demo {
     public static void main(String[] args) {

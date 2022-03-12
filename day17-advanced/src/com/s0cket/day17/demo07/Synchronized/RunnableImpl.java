@@ -37,10 +37,8 @@ package com.s0cket.day17.demo07.Synchronized;
 public class RunnableImpl implements Runnable {
     // 定义一个多线程共享的票源
     private int ticket = 100;
-
     // 创建一个锁对象
     Object obj = new Object();
-
     // 设置线程任务：卖票
     @Override
     public void run() {
@@ -61,7 +59,5 @@ public class RunnableImpl implements Runnable {
                 }
             }
         }
-
     }
-
 }

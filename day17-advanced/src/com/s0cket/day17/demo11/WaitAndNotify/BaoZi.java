@@ -6,7 +6,6 @@ package com.s0cket.day17.demo11.WaitAndNotify;
         线
         包子的状态：有true，没有false
  */
-
 public class BaoZi {
     // 皮
     String pi;

@@ -22,7 +22,6 @@ public class ChiHuo extends Thread {
     }
 
     //3、设置线程任务(run)：吃包子
-
     @Override
     public void run() {
         //使用死循环，让吃货一直吃包子

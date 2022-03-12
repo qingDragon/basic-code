@@ -20,7 +20,7 @@ import java.util.concurrent.Executors;
     线程池的使用步骤：
         1、使用线程池的工厂类Executors里边提供的静态方法newFixedThreadPool生产一个指定线程数量的线程池
         2、创建一个类，实现Runnable接口，重写run方法，设置线程任务
-        3、调用ExecutorService中的方法submit，传递线程任务（实现开启线类），程，执行run方法
+        3、调用ExecutorService中的方法submit，传递线程任务（实现开启线程类），执行run方法
         4、调用ExecutorService中的方法shutdown销毁线程池（不建议执行）
 
 

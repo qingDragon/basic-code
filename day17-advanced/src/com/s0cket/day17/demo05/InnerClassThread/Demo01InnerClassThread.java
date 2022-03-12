@@ -30,7 +30,6 @@ public class Demo01InnerClassThread {
                 }
             }
         }.start();
-
         // 线程的接口Runnable
         // Runnable r = new RunnableImpl(); // 多态
         Runnable r = new Runnable() {
@@ -44,7 +43,6 @@ public class Demo01InnerClassThread {
         };
         Thread t = new Thread(r);
         t.start();
-
         // 链式编程
         new Thread(new Runnable() {
             @Override

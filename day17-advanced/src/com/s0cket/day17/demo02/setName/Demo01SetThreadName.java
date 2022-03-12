@@ -5,7 +5,6 @@ public class Demo01SetThreadName {
         // 使用构造方法创建自定义线程类实例
         MyThread mt = new MyThread("xiaozhao");
         System.out.println(mt.getName());// xiaozhao
-
         System.out.println(Thread.currentThread().getName());// main
     }
 }
