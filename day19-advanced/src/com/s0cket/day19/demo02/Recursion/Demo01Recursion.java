@@ -23,7 +23,6 @@ public class Demo01Recursion {
 //        Demo01Recursion();
     }
 
-
     //47407
     //Exception in thread "main" java.lang.StackOverflowError 栈溢出
     private static void b(int n) {

@@ -32,7 +32,6 @@ public class Demo03Filter {
         File f = new File("/Users/yanzhuang/Desktop/A");
         getAllFiles(f);
     }
-
     public static void getAllFiles(File pathname){
         /*
             传递过滤器
@@ -42,7 +41,7 @@ public class Demo03Filter {
         File[] files = pathname.listFiles(dir -> dir.isDirectory() || dir.getName().toLowerCase().endsWith(".java"));
 
         // 传递过滤器FilenameFilter，使用匿名内部类方式,Lambda表达式
-        // File[] files = pathname.listFiles((dir,name) -> new File(dir,name).isDirectory() || name.toLowerCase().endsWith(".java"));
+//         File[] files = pathname.listFiles((dir,name) -> new File(dir,name).isDirectory() || name.toLowerCase().endsWith(".java"));
         // 遍历File数组
         for (File file : files) {
             // 判断file对象是文件夹还是文件
