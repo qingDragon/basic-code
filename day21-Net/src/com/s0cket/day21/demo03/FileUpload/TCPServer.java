@@ -34,6 +34,10 @@ public class TCPServer {
          */
         while(true) {
             Socket socket = ss.accept();
+            /*
+                优化3：
+                进一步提高效率，使用多线程处理多个客户端套接字的请求
+             */
             new Thread(new Runnable() {
                 @Override
                 public void run() {
