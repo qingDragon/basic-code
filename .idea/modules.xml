@@ -21,6 +21,7 @@
       <module fileurl="file://$PROJECT_DIR$/day20-IO/day20-IO.iml" filepath="$PROJECT_DIR$/day20-IO/day20-IO.iml" />
       <module fileurl="file://$PROJECT_DIR$/day21-Net/day21-Net.iml" filepath="$PROJECT_DIR$/day21-Net/day21-Net.iml" />
       <module fileurl="file://$PROJECT_DIR$/day22-FunctionalInterface/day22-FunctionalInterface.iml" filepath="$PROJECT_DIR$/day22-FunctionalInterface/day22-FunctionalInterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day23-StreamAndMethodReference/day23-StreamAndMethodReference.iml" filepath="$PROJECT_DIR$/day23-StreamAndMethodReference/day23-StreamAndMethodReference.iml" />
     </modules>
   </component>
 </project>
